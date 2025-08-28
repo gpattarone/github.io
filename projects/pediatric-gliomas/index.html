@@ -16,7 +16,8 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: #f8f9fa;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #00b894 100%);
+            min-height: 100vh;
         }
 
         .nav {
@@ -93,12 +94,48 @@
             text-align: center;
         }
 
-        .demo-screenshot {
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .video-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .video-container {
+            position: relative;
             width: 100%;
-            max-width: 900px;
-            border-radius: 10px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-            margin: 30px 0;
+            height: 300px;
+            background: #000;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-info {
+            padding: 20px;
+        }
+
+        .video-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .video-description {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
         }
 
         .features-grid {
@@ -272,11 +309,36 @@
         </div>
 
         <div class="demo-section">
-            <h2>Interactive Teal Application Demo</h2>
-            <p>The Shiny application provides an intuitive interface for exploring pediatric glioma genomic data with real-time visualization and analysis capabilities.</p>
+            <h2>Interactive Teal Application Demonstrations</h2>
+            <p>Watch these videos showcasing the key features and capabilities of the Teal application for pediatric glioma genomic analysis.</p>
             
-            <!-- Screenshot of your Teal application -->
-            <img src="../../assets/images/teal-app-screenshot.png" alt="Teal Application Screenshot" class="demo-screenshot" />
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-container">
+                        <video controls poster="../../assets/images/teal-demo-thumbnail.png">
+                            <source src="../../assets/videos/teal-app-demo.mp4" type="video/mp4">
+                            <p>Your browser doesn't support video playback. <a href="../../assets/videos/teal-app-demo.mp4">Download the video</a> instead.</p>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-title">Teal Application Walkthrough</div>
+                        <div class="video-description">Complete tour of the genomic analysis interface showing data visualization, mutation profiling, and therapeutic analysis features in action.</div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-container">
+                        <video controls poster="../../assets/images/pipeline-demo-thumbnail.png">
+                            <source src="../../assets/videos/pipeline-workflow.mp4" type="video/mp4">
+                            <p>Your browser doesn't support video playback.</p>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-title">Pipeline Workflow Demo</div>
+                        <div class="video-description">Step-by-step demonstration of the SRA data processing, variant analysis, and integration with the interactive visualization platform.</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="features-grid">
