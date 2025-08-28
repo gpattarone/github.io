@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gisela Pattarone - Data Science/Bioinformatics Portfolio</title>
+    <title>Giuliano Pattarone - Bioinformatics Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         * {
@@ -16,7 +16,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #00b894 100%);
             min-height: 100vh;
         }
 
@@ -38,7 +38,7 @@
 
         .header h1 {
             font-size: 3rem;
-            background: linear-gradient(45deg, #667eea, #764ba2);
+            background: linear-gradient(45deg, #2980b9, #00b894);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 10px;
@@ -58,14 +58,14 @@
         }
 
         .social-links a {
-            color: #667eea;
+            color: #2980b9;
             font-size: 1.5rem;
             transition: transform 0.3s ease;
         }
 
         .social-links a:hover {
             transform: translateY(-3px);
-            color: #764ba2;
+            color: #00b894;
         }
 
         .projects-grid {
@@ -90,7 +90,7 @@
         }
 
         .project-header {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #2980b9, #00b894);
             color: white;
             padding: 30px;
             text-align: center;
@@ -125,7 +125,7 @@
         }
 
         .tech-tag {
-            background: linear-gradient(45deg, #667eea, #764ba2);
+            background: linear-gradient(45deg, #2980b9, #00b894);
             color: white;
             padding: 5px 12px;
             border-radius: 20px;
@@ -149,14 +149,14 @@
         }
 
         .btn-primary {
-            background: linear-gradient(45deg, #667eea, #764ba2);
+            background: linear-gradient(45deg, #2980b9, #00b894);
             color: white;
         }
 
         .btn-secondary {
             background: transparent;
-            color: #667eea;
-            border: 2px solid #667eea;
+            color: #2980b9;
+            border: 2px solid #2980b9;
         }
 
         .btn:hover {
@@ -195,7 +195,7 @@
         .stat-number {
             font-size: 2.5rem;
             font-weight: 700;
-            background: linear-gradient(45deg, #667eea, #764ba2);
+            background: linear-gradient(45deg, #2980b9, #00b894);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -206,7 +206,57 @@
             margin-top: 5px;
         }
 
-        @media (max-width: 768px) {
+        .video-section {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .video-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            background: #000;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-info {
+            padding: 20px;
+        }
+
+        .video-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .video-description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
             .projects-grid {
                 grid-template-columns: 1fr;
             }
@@ -226,19 +276,19 @@
         <div class="header">
             <h1>Gisela Pattarone</h1>
             <p>Bioinformatician & Health Data Scientist</p>
-            <p>Specialized in Cancer Genomics & Precision Medicine</p>
+            <p>Specialized in Pediatric Cancer Genomics & Precision Medicine</p>
             
             <div class="social-links">
                 <a href="https://github.com/gpattarone" target="_blank" title="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/giselapattarone/" target="_blank" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/your-profile" target="_blank" title="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="mailto:giselapattarone@gmail.com" title="Email">
+                <a href="mailto:your.email@domain.com" title="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
-                <a href="https://scholar.google.com/citations?user=jwHu-jEAAAAJ&hl" target="_blank" title="Google Scholar">
+                <a href="https://scholar.google.com/citations?user=your-id" target="_blank" title="Google Scholar">
                     <i class="fas fa-graduation-cap"></i>
                 </a>
             </div>
@@ -260,6 +310,53 @@
             <div class="stat-card">
                 <div class="stat-number">100%</div>
                 <div class="stat-label">Open Source</div>
+            </div>
+        </div>
+
+        <div class="video-section">
+            <h2>Project Demonstrations</h2>
+            <p>Watch these mini-videos showcasing the key features and capabilities of the genomic analysis pipeline.</p>
+            
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-container">
+                        <!-- Replace with your actual video file -->
+                        <video controls poster="assets/images/video1-thumbnail.png">
+                            <source src="assets/videos/teal-app-demo.mp4" type="video/mp4">
+                            <p>Your browser doesn't support video playback. <a href="assets/videos/teal-app-demo.mp4">Download the video</a> instead.</p>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-title">Teal Application Walkthrough</div>
+                        <div class="video-description">Interactive tour of the genomic analysis interface, showing data visualization and mutation profiling features.</div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-container">
+                        <video controls poster="assets/images/video2-thumbnail.png">
+                            <source src="assets/videos/pipeline-workflow.mp4" type="video/mp4">
+                            <p>Your browser doesn't support video playback.</p>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-title">Pipeline Workflow Demo</div>
+                        <div class="video-description">Step-by-step demonstration of the SRA data processing and variant analysis pipeline in action.</div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-container">
+                        <video controls poster="assets/images/video3-thumbnail.png">
+                            <source src="assets/videos/results-interpretation.mp4" type="video/mp4">
+                            <p>Your browser doesn't support video playback.</p>
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-title">Results Interpretation</div>
+                        <div class="video-description">How to interpret genomic analysis results and therapeutic recommendations from the pipeline output.</div>
+                    </div>
+                </div>
             </div>
         </div>
 
