@@ -2,7 +2,7 @@
 
 Personal portfolio showcasing bioinformatics and genomics projects.
 
-**Live Site**: [https://gpattarone.github.io/] (https://gpattarone.github.io/github.io/)
+**Live Site**: [https://gpattarone.github.io/](https://gpattarone.github.io/github.io/)
 
 ## About
 Portfolio of Gisela Pattarone - Bioinformatician & Health Data Scientist specialized in Pediatric Cancer Genomics & Precision Medicine.
